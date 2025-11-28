@@ -1,0 +1,328 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    
+    height: 40px; 
+    width: auto; 
+    border: none;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav ul li {
+    margin-left: 20px;
+}
+
+.nav ul li a {
+    padding: 5px 10px;
+}
+
+.nav ul li a.ativar {
+    font-weight: bold;
+    border-bottom: 2px solid #333; 
+}
+
+.breadcrumbs {
+    padding: 10px 50px;
+    font-size: 0.9em;
+    color: #666;
+    border-bottom: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.bloco {
+    display: grid;
+    grid-template-columns: 250px 1fr; 
+    gap: 30px;
+    padding: 20px 50px;
+    min-height: calc(100vh - 180px);
+    background-color: #fff;
+}
+
+.sidebar {
+    border-right: 1px solid #ccc; 
+    padding-right: 30px;
+}
+
+.titulosidebar {
+    text-transform: uppercase;
+    font-size: 1.1em;
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.fotobanda {
+    width: 100%;
+    height: 180px;
+    border: 1px solid #000;
+    margin-bottom: 15px;
+    overflow: hidden; 
+}
+
+.fotobanda img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+.textoaleatorio {
+    font-size: 0.8em;
+    line-height: 1.4;
+    color: #555;
+}
+
+.principal h1, .principal h2 {
+    margin-top: 0;
+    font-size: 2em;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+.principal h2 {
+    font-size: 1.5em;
+}
+
+.principal p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 0.8em;
+    color: #666;
+}
+
+.citarfrase {
+    text-align: right;
+    margin: 30px 0;
+    padding: 10px 20px;
+    border-left: 3px solid #000;
+    background-color: #f9f9f9;
+    font-style: italic;
+}
+.citarfrase p {
+    margin: 0;
+}
+.citarfrase cite {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+
+.jabuticabos-info {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.jabuticabos-foto {
+    width: 100%;
+    height: 250px;
+    border: 1px solid #000;
+    overflow: hidden; 
+}
+
+.jabuticabos-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+.detalhetabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.detalhetabela th, .detalhetabela td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.detalhetabela th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+
+.blocoalbum {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.albumindividual {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.albumindividual h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.1em;
+}
+
+.albumcapa {
+    width: 100%;
+    height: 180px;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+    overflow: hidden; 
+}
+
+.albumcapa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+.anoalbum {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+}
+
+.formulariocontato {
+    border: 1px solid #ccc;
+    padding: 30px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+}
+
+.detalhesform label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.detalhesform input[type="text"],
+.detalhesform input[type="email"],
+.detalhesform textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.detalhesform textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.detalhesform button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    display: block;
+    width: 100%;
+}
+
+.detalhesform button:hover {
+    background-color: #555;
+}
+
+.albumcabeca {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.detalhealbum {
+    width: 100%;
+    height: 250px;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+.detalhealbum img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.albuminfo h2 {
+    margin-top: 0;
+    font-size: 2em;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+.albuminfo p {
+    line-height: 1.6;
+}
+
+.listamusica h3 {
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.musica {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #eee;
+    background-color: #fcfcfc;
+}
+
+.nomemusica {
+    font-weight: bold;
+    flex-grow: 1;
+}
