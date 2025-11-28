@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo da véia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Jogo da véia</h1>
+
+    <div id="jogo">
+        <div class="cartas" data-name="a" onclick="flip(this)">
+            <div class="frente"><img src="imagens/gato.jpg"></div>
+            <div class="atras">1</div>
+        </div>
+        <div class="cartas" data-name="a" onclick="flip(this)">
+            <div class="frente"><img src="imagens/gato.jpg"></div>
+            <div class="atras">2</div>
+        </div>
+        <div class="cartas" data-name="b" onclick="flip(this)">
+            <div class="frente"><img src="imagens/macaco.jpg"></div>
+            <div class="atras">3</div>
+        </div>
+        <div class="cartas" data-name="b" onclick="flip(this)">
+            <div class="frente"><img src="imagens/macaco.jpg"></div>
+            <div class="atras">4</div>
+        </div>
+        <div class="cartas" data-name="c" onclick="flip(this)">
+            <div class="frente"><img src="imagens/ronaldi.jpeg"></div>
+            <div class="atras">5</div>
+        </div>
+        <div class="cartas" data-name="c" onclick="flip(this)">
+            <div class="frente"><img src="imagens/ronaldi.jpeg"></div>
+            <div class="atras">6</div>
+        </div>
+    </div>
+
+    <button onclick="location.reload()">Reiniciar</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
